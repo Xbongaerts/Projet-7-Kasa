@@ -1,0 +1,37 @@
+import { Link, NavLink } from "react-router-dom";
+
+const Header = (props) => {
+  return (
+    <header>
+      <div>
+        <Link to="/">
+          <img
+            className={classes.header_logo}
+            src={pinkLogo}
+            alt="Page d'accueil"
+          />
+        </Link>
+      </div>
+      <nav>
+        <NavLink
+          to="/"
+          className={({ isActive }) => {
+            return isActive ? classes.activeLink : classes.nonActiveLink;
+          }}
+        >
+          Accueil
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => {
+            return isActive ? classes.activeLink : classes.nonActiveLink;
+          }}
+        >
+          A Propos
+        </NavLink>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
