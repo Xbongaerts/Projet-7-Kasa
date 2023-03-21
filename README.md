@@ -15,6 +15,8 @@ Installer les dépendances avec la commande npm install
 
 Démarrer le serveur avec la commande npm start
 
+cliquer sur le lien --> http://localhost:3000  
+
 Lien du Projet : 
 
 xbongaerts.github.io/Projet-7-Kasa/
