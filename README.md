@@ -19,7 +19,7 @@ cliquer sur le lien --> http://localhost:3000
 
 Lien du Projet : 
 
-projet-7-kasa-nzeji9n95-xbongaerts.vercel.app
+https://projet-7-kasa-git-main-xbongaerts.vercel.app/
 
 
 
