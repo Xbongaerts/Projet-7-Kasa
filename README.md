@@ -19,7 +19,7 @@ cliquer sur le lien --> http://localhost:3000
 
 Lien du Projet : 
 
-xbongaerts.github.io/Projet-7-Kasa/
+https://projet-7-henna.vercel.app/
 
 
 
