@@ -1,3 +1,4 @@
+// Permet d'afficher les textes via l'évenement click
 import './collapse.scss'
 import arrow from '../../assets/arrow.png';
 import { useState } from 'react';

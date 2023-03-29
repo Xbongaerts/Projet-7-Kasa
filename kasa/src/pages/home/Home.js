@@ -1,3 +1,4 @@
+// Page d'accueil kasa
 import './home.scss'
 import Header from '../../components/header/Header'
 import Banner from '../../components/banner/Banner'

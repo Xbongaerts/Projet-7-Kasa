@@ -1,3 +1,4 @@
+// carousel images appartement
 import './carousel.scss'
 import ArrowRight from '../../assets/chevron_carousel_right.png'
 import ArrowLeft from '../../assets/chevron_carousel_left.png'
@@ -27,13 +28,13 @@ export default function Slider({imageSlider}) {
                         className='carousel_arrow carousel_arrow_right' 
                         src={ArrowRight} 
                         alt="show next slider" 
-                        onClick={nextSlide}
+                        onClick={nextSlide} // permet de passer à l'image suivante
                     />
                     <img 
                         className='carousel_arrow carousel_arrow_left' 
                         src={ArrowLeft} 
                         alt="show previous slider" 
-                        onClick={prevSlide}
+                        onClick={prevSlide} // permet de revenir à l'image précédente
                     />
                     <p className='slideCount'>{currentIndex + 1} / {imageSlider.length}</p>
                 </>

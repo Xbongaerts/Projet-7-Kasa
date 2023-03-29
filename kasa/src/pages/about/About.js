@@ -1,3 +1,4 @@
+// Page à propos
 import './about.scss';
 import Header from "../../components/header/Header";
 import Banner from '../../components/banner/Banner';

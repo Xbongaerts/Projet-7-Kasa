@@ -1,3 +1,4 @@
+// Page 404 si chemin erroné
 import './notFound.scss'
 import Header from "../../components/header/Header";
 import { Link } from 'react-router-dom';
