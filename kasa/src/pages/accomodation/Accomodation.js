@@ -2,7 +2,8 @@
 import './accomodation.scss'
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
-import datas from '../../data/data'
+//ficher logement
+import datas from '../../data/data' 
 import Header from "../../components/header/Header";
 import Slider from "../../components/carousel/Carousel"
 import Footer from "../../components/footer/Footer";
