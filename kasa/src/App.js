@@ -6,9 +6,11 @@ import Accomodation from './pages/accomodation/Accomodation';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([ 
+
 	{
 		path: "/",
 		element: <Home />
+		
 	},
 	{
 		path: "/Kasa/",
@@ -31,7 +33,9 @@ const router = createBrowserRouter([
 function App() {
 	return (
 		<>
+		
 			<RouterProvider router={router}/>
+			
 		</>
 	);
 }

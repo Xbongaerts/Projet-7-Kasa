@@ -1,6 +1,5 @@
 // Page Hébergement
 import './accomodation.scss'
-import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 //ficher logement
 import datas from '../../data/data' 
@@ -10,29 +9,31 @@ import Footer from "../../components/footer/Footer";
 import Collapse from '../../components/collapse/Collapse';
 import greyStar from '../../assets/grey_star.png';
 import redStar from '../../assets/red_star.png';
+import NotFound from '../notFound/NotFound';
 
-
+// Correction id 404 
 export default function Accomodation() {
-	
-	const [imageSlider, setImageSlider] = useState([]);
 
-	const idAccomodation = useParams('id').id;
-	const dataCurrentAccomodation = datas.filter(data => data.id === idAccomodation);
-	
-	useEffect(() => {
-		const dataCurrentAccomodation = datas.filter(data => data.id === idAccomodation);
-		setImageSlider(dataCurrentAccomodation[0].pictures);
-	}, [idAccomodation]);
+	const {id} = useParams();
+	const dataCurrentAccomodation = datas.filter((data) => {
+		return data.id === id
+	});
 
+	if(dataCurrentAccomodation[0] === undefined){
+		return <NotFound />
+	}
+	
+	
 	const name = dataCurrentAccomodation[0].host.name.split(' '); 
 	const rating = dataCurrentAccomodation[0].rating;
 	const description  = dataCurrentAccomodation[0].description;
 	const equipments = dataCurrentAccomodation[0].equipments;
+	const pictures = dataCurrentAccomodation[0].pictures;
 
 	return (
 		<>
 			<Header/>
-			<Slider imageSlider={imageSlider}/>
+			<Slider imageSlider={pictures}/>
 			<main className="accomodation">
 				<div className="accomodation_content">
 					<div className="accomodation_content_infos">
