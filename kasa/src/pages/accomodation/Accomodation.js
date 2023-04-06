@@ -11,15 +11,14 @@ import greyStar from '../../assets/grey_star.png';
 import redStar from '../../assets/red_star.png';
 import NotFound from '../notFound/NotFound';
 
-// Correction id 404 
 export default function Accomodation() {
 
-	const {id} = useParams();
+	const {id} = useParams(); 
 	const dataCurrentAccomodation = datas.filter((data) => {
 		return data.id === id
 	});
 
-	if(dataCurrentAccomodation[0] === undefined){
+	if(dataCurrentAccomodation[0] === undefined){ // si le chemin est erroné renvoie la page 404
 		return <NotFound />
 	}
 	

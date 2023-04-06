@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 export default function Collapse({title, content}) {
 
-    const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState(false); // basculer le texte
 
     return (
         <>

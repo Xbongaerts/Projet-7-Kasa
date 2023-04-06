@@ -5,7 +5,7 @@ import ArrowLeft from '../../assets/chevron_carousel_left.png'
 import { useState } from 'react'
 
 export default function Slider({imageSlider}) {
-
+    // appel de useState (état actuel )
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const nextSlide = () => {
